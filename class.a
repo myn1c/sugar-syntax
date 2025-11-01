@@ -1,0 +1,20 @@
+class People{
+    def People(name: string, age: int, pet?: People.Pet){
+        this.name = name
+        this.age = age
+        if pet != None {
+            this.pet = pet
+        }
+    }
+
+    class Pet{
+        def Pet(name: string, age: int){
+            this.name = name
+            this.age = age
+        }
+    }
+}
+
+def main(args: String[]){
+    people = People("Yaroslav", 19, People.Pet("Tom", 7))
+}
