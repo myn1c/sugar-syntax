@@ -15,6 +15,12 @@ class People{
     }
 }
 
+class Child{
+    def Child(name: string, age: int, weight: string) : People(name, age){
+        this.weight = weight
+    }
+}
+
 def main(args: String[]){
     people = People("Yaroslav", 19, People.Pet("Tom", 7))
 }
