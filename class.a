@@ -1,5 +1,5 @@
 class People{
-    def People(name: string, age: int, pet?: People.Pet){
+    def People(name: String, age: Int, pet?: People.Pet){
         this.name = name
         this.age = age
         if pet != None {
@@ -8,7 +8,7 @@ class People{
     }
 
     class Pet{
-        def Pet(name: string, age: int){
+        def Pet(name: String, age: Int){
             this.name = name
             this.age = age
         }
@@ -16,7 +16,7 @@ class People{
 }
 
 class Child{
-    def Child(name: string, age: int, weight: string) : People(name, age){
+    def Child(name: String, age: Int, weight: String) : People(name, age){
         this.weight = weight
     }
 }
